@@ -22,16 +22,16 @@ export class Game extends Phaser.Scene {
   // He aprendido demasiado tarde a que todo lo que carga aquí, se carga en todas las pantallas. No he sabido gestionar bien las imágenes y los sonidos.
   //Pero al menos ya lo sé para la próxima vez.
   preload() {
-    this.load.image("background", "./imagenes/mundo1.png");
-    this.load.image("nave", "./imagenes/nave.png");
-    this.load.image("bala", "./imagenes/disparo.png");
-    this.load.image("meteorito1", "./imagenes/meteorito1.png");
-    this.load.image("meteorito2", "./imagenes/meteorito2.png");
-    this.load.image("meteorito3", "./imagenes/meteorito3.png");
-    this.load.audio("themeSongLevelOne", "./audio/themeSongLevelOne.mp3");
-    this.load.audio("explosion", "./audio/explosion.mp3");
-    this.load.audio("disparo", "./audio/laserShot.mp3");
-    this.load.audio("getDaño", "./audio/dañoRecibido.mp3");
+    this.load.image("background", "../imagenes/mundo1.png");
+    this.load.image("nave", "../imagenes/nave.png");
+    this.load.image("bala", "../imagenes/disparo.png");
+    this.load.image("meteorito1", "../imagenes/meteorito1.png");
+    this.load.image("meteorito2", "../imagenes/meteorito2.png");
+    this.load.image("meteorito3", "../imagenes/meteorito3.png");
+    this.load.audio("themeSongLevelOne", "../audio/themeSongLevelOne.mp3");
+    this.load.audio("explosion", "../audio/explosion.mp3");
+    this.load.audio("disparo", "../audio/laserShot.mp3");
+    this.load.audio("getDaño", "../audio/dañoRecibido.mp3");
     this.lives = new Lives(this, 680, 50);
     this.lives.preload();
   }
